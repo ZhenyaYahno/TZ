@@ -102,11 +102,11 @@ body {
       body #main .first-container div:last-child p:last-child {
         font-weight: bold; }
       body #main .first-container div:first-child::after {
-        background: linear-gradient(90deg, #ffa600 0% 49.9%, #e69500 50% 100%);
+        background: linear-gradient(to right, #ffa600 50%, #e69500 50%);
         right: -187.8px;
         transform: rotate(90deg); }
       body #main .first-container div:last-child::after {
-        background: linear-gradient(90deg, #006eff 0% 49.9%, #0062e2 50% 100%);
+        background: linear-gradient(to right, #006eff 50%, #0062e2 50%);
         right: -187.8px;
         transform: rotate(90deg); }
     body #main .first-container::after {
@@ -133,11 +133,11 @@ body {
       body #main .last-container div:last-child p:last-child {
         font-weight: bold; }
       body #main .last-container div:first-child::after {
-        background: linear-gradient(90deg, #d10069 0% 49.9%, #ee0077 50% 100%);
+        background: linear-gradient(to right, #d10069 50%, #ee0077 50%);
         left: -187.8px;
         transform: rotate(270deg); }
       body #main .last-container div:last-child::after {
-        background: linear-gradient(90deg, #003f91 0% 49.9%, #004aaa 50% 100%);
+        background: linear-gradient(to right, #003f91 50%, #004aaa 50%);
         left: -187.8px;
         transform: rotate(270deg); }
     body #main .last-container::after {
