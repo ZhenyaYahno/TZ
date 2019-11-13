@@ -1,0 +1,266 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: NotoSans;
+  color: white; }
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url("./fonts/NotoSans.eot");
+  src: url("./fonts/NotoSans.eot?#iefix") format("embedded-opentype"), url("./fonts/NotoSans.woff2") format("woff2"), url("./fonts/NotoSans.woff") format("woff"), url("./fonts/NotoSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NotoSans';
+  src: url("./fonts/NotoSans-Bold.eot");
+  src: url("./fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/NotoSans-Bold.woff2") format("woff2"), url("./fonts/NotoSans-Bold.woff") format("woff"), url("./fonts/NotoSans-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal; }
+body #header p:first-child, body #main .first-container div:first-child p:first-child, body #main .first-container div:last-child p:first-child, body #main .last-container div:first-child p:first-child, body #main .last-container div:last-child p:first-child, body #footer p:first-child {
+  color: #2c2c2c; }
+
+body #main .first-container div:first-child p:last-child, body #main .first-container div:last-child p:last-child, body #main .last-container div:first-child p:last-child, body #main .last-container div:last-child p:last-child, body #footer p:last-child {
+  color: silver; }
+
+body #main .first-container, body #main .last-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  z-index: 999; }
+
+body #main .first-container div:first-child, body #main .first-container div:last-child, body #main .last-container div:first-child, body #main .last-container div:last-child {
+  width: 100%;
+  height: 185px;
+  background-color: white;
+  margin: 20px 0px;
+  box-shadow: 0px 21px 14px -12px #afafaf;
+  position: relative;
+  padding: 30px;
+  z-index: 999; }
+
+body #main .first-container div:first-child::after, body #main .first-container div:last-child::after, body #main .last-container div:first-child::after, body #main .last-container div:last-child::after {
+  content: '';
+  height: 190px;
+  width: 185px;
+  position: absolute;
+  top: -2px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  z-index: 99; }
+
+body #main .first-container div:first-child p:first-child, body #main .first-container div:last-child p:first-child, body #main .last-container div:first-child p:first-child, body #main .last-container div:last-child p:first-child {
+  font-size: 30px;
+  font-weight: bold; }
+
+body #main .first-container::after, body #main .last-container::after {
+  content: '';
+  height: 100%;
+  width: 25.5px;
+  position: absolute;
+  top: 0px;
+  z-index: 9999999999999; }
+
+body {
+  background-color: #e0e0e0;
+  overflow-x: hidden; }
+  body #header {
+    width: 100%;
+    height: 200px;
+    padding: 40px 0px 0px 30px;
+    margin-bottom: 40px; }
+    body #header p {
+      font-size: 50px;
+      font-weight: bold; }
+    body #header p:last-child {
+      color: #009c9c; }
+  body #main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px; }
+    body #main .first-container {
+      justify-content: flex-end;
+      padding: 20px 0px 117px 30px;
+      border-right: 0.7px solid rgba(224, 224, 224, 0.603); }
+      body #main .first-container div:first-child p:first-child {
+        text-align: right; }
+        body #main .first-container div:first-child p:first-child span {
+          font-size: inherit;
+          font-weight: inherit;
+          color: #ffa600; }
+      body #main .first-container div:first-child p:last-child {
+        font-weight: bold; }
+      body #main .first-container div:last-child p:first-child {
+        text-align: right; }
+        body #main .first-container div:last-child p:first-child span {
+          font-size: inherit;
+          font-weight: inherit;
+          color: #006eff; }
+      body #main .first-container div:last-child p:last-child {
+        font-weight: bold; }
+      body #main .first-container div:first-child::after {
+        background: linear-gradient(90deg, #ffa600 0% 49.9%, #e69500 50% 100%);
+        right: -187.8px;
+        transform: rotate(90deg); }
+      body #main .first-container div:last-child::after {
+        background: linear-gradient(90deg, #006eff 0% 49.9%, #0062e2 50% 100%);
+        right: -187.8px;
+        transform: rotate(90deg); }
+    body #main .first-container::after {
+      right: 0px;
+      box-shadow: 17px 0px 9px -11px rgba(110, 110, 110, 0.7); }
+    body #main .last-container {
+      justify-content: flex-start;
+      padding: 20px 30px 20px 0px;
+      border-left: 0.7px solid rgba(224, 224, 224, 0.603); }
+      body #main .last-container div:first-child p:first-child {
+        text-align: left; }
+        body #main .last-container div:first-child p:first-child span {
+          font-size: inherit;
+          font-weight: inherit;
+          color: #ee0077; }
+      body #main .last-container div:first-child p:last-child {
+        font-weight: bold; }
+      body #main .last-container div:last-child p:first-child {
+        text-align: left; }
+        body #main .last-container div:last-child p:first-child span {
+          font-size: inherit;
+          font-weight: inherit;
+          color: #004aaa; }
+      body #main .last-container div:last-child p:last-child {
+        font-weight: bold; }
+      body #main .last-container div:first-child::after {
+        background: linear-gradient(90deg, #d10069 0% 49.9%, #ee0077 50% 100%);
+        left: -187.8px;
+        transform: rotate(270deg); }
+      body #main .last-container div:last-child::after {
+        background: linear-gradient(90deg, #003f91 0% 49.9%, #004aaa 50% 100%);
+        left: -187.8px;
+        transform: rotate(270deg); }
+    body #main .last-container::after {
+      left: 0px;
+      box-shadow: -17px 0px 9px -11px rgba(110, 110, 110, 0.7); }
+  body #footer {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    top: -70px;
+    z-index: 99999999999999999;
+    padding: 20px 55px;
+    box-shadow: 0px 0px 31px -10px black; }
+    body #footer p:first-child {
+      font-size: 35px;
+      font-weight: bold; }
+      body #footer p:first-child span {
+        font-size: inherit;
+        font-weight: inherit;
+        color: #ffa600; }
+    body #footer p:last-child {
+      font-size: 20px; }
+
+#prldr .block .preloader div {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%; }
+
+#prldr .b-block .b-preloader .p1, #prldr .b-block .b-preloader .p2, #prldr .b-block .b-preloader .p3, #prldr .b-block .b-preloader .p4, #prldr .b-block .b-preloader .p5, #prldr .b-block .b-preloader .p6, #prldr .b-block .b-preloader .p7, #prldr .b-block .b-preloader .p8 {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 222;
+  position: relative; }
+
+#prldr .block, #prldr .b-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#prldr {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dee5ec;
+  z-index: 999999999999; }
+  #prldr .block {
+    z-index: 999999;
+    animation-name: rotation;
+    animation-duration: 10s;
+    border: 1px solid rgba(255, 255, 255, 0); }
+    #prldr .block .preloader {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 80px;
+      height: 80px; }
+      #prldr .block .preloader div {
+        position: relative; }
+      #prldr .block .preloader .b1 {
+        top: 3px; }
+      #prldr .block .preloader .b2 {
+        top: 3px; }
+      #prldr .block .preloader .b3 {
+        bottom: 3px; }
+      #prldr .block .preloader .b4 {
+        bottom: 3px; }
+  #prldr .b-block {
+    z-index: 9999999;
+    animation-name: b-rotation;
+    animation-duration: 2s; }
+    #prldr .b-block .b-preloader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border: 1px solid rgba(255, 255, 255, 0);
+      width: 200px;
+      height: 200px; }
+      #prldr .b-block .b-preloader .p1 {
+        left: 20px;
+        top: 25px; }
+      #prldr .b-block .b-preloader .p2 {
+        bottom: 10px; }
+      #prldr .b-block .b-preloader .p3 {
+        bottom: 10px; }
+      #prldr .b-block .b-preloader .p4 {
+        top: 25px;
+        right: 20px; }
+      #prldr .b-block .b-preloader .p5 {
+        left: 20px;
+        bottom: 25px; }
+      #prldr .b-block .b-preloader .p6 {
+        top: 10px; }
+      #prldr .b-block .b-preloader .p7 {
+        top: 10px; }
+      #prldr .b-block .b-preloader .p8 {
+        bottom: 25px;
+        right: 20px; }
+
+@keyframes rotation {
+  100% {
+    transform: rotate(3600deg); } }
+@keyframes b-rotation {
+  100% {
+    transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=style.css.map */
